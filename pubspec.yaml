@@ -1,6 +1,6 @@
 name: device_geometry
 description: "Flutter package providing information about the device geometry, such as the corner radius."
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/bcheidemann/flutter_device_geometry
 
 environment:
