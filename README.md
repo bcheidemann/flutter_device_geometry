@@ -142,6 +142,16 @@ is considered in scope for this package but has not been implemented yet.
 
 ## Additional information
 
+### Limitations
+
+The corners of most iOS devices cannot be moddled as a simple arc. Therefore,
+there is no single corner radius which precisely describes the shape of the
+corner. The corner radius returned by `device_geometry` is generally the one
+returned by `UIScreen._displayCornerRadius`, which offers a good approximation
+of the true corner shape. Ideally, we would also provide the precise shape of
+the corner, but a suitable source for this information has not yet been
+identified.
+
 ### Design Choices
 
 On iOS, we use a map to look up a hardcoded display geometry using the utsname
@@ -169,6 +179,7 @@ which have not been implemented yet:
 - Button positions
   - Power button position
   - Volume button positions
+- Corner shapes (currently all assumed to be arcs)
 
 ## Contributing
 

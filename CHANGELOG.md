@@ -1,5 +1,6 @@
 ## 0.0.3
 
+* docs: Document limitations
 * docs: Add screenshot demonstrating usage
 
 ## 0.0.2
