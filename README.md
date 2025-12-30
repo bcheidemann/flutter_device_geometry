@@ -3,10 +3,62 @@ corner radius.
 
 ## Usage
 
+### Imperative Usage
+
 ```dart
 import 'package:device_geometry/device_geometry.dart';
 
 await DeviceGeometry.get(); // Returns `null` for unsupported devices
+```
+
+### Provider
+
+```dart
+import 'package:device_geometry/widgets/provider.dart';
+import 'package:flutter/material.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  final DeviceGeometry? geometry = await DeviceGeometry.get();
+
+  runApp(MainApp(
+    geometry: geometry,
+  ));
+}
+
+class MainApp extends StatelessWidget {
+  final DeviceGeometry? geometry;
+
+  const MainApp({super.key, required this.geometry});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      builder: (context, _) => DeviceGeometryProvider(
+        geometry: geometry,
+        child: HomePage(),
+      ),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final DeviceGeometry? geometry = DeviceGeometry.of(context);
+
+    return Scaffold(
+      body: Center(
+        child: Text(
+          "bottomLeft = ${geometry?.display.cornerRadii.bottomLeft ?? "-"}",
+        ),
+      ),
+    );
+  }
+}
 ```
 
 ## Supported platforms
