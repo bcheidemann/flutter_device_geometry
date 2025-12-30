@@ -1,3 +1,7 @@
+## 0.0.3
+
+* docs: Add screenshot demonstrating usage
+
 ## 0.0.2
 
 * fix: Make DeviceGeometry.get static

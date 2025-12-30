@@ -1,5 +1,12 @@
+<img
+  height="600"
+  alt="screenshot demonstrating matching a bottom sheet's border radius to the corner radius of an iPhone 13"
+  src="./screenshots/device_geometry.png"></img>
+
 Flutter package providing information about the device geometry, such as the
-corner radius.
+corner radius. `device_geometry` has a variety of use cases. One example, as
+demonstrated in the above screenshots, is to match the modal radius to the
+corner radius of the device.
 
 ## Usage
 
