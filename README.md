@@ -11,6 +11,23 @@ import 'package:device_geometry/device_geometry.dart';
 await DeviceGeometry.get(); // Returns `null` for unsupported devices
 ```
 
+### Builder
+
+```dart
+import 'package:device_geometry/widgets/builder.dart';
+
+DeviceGeometryBuilder(builder: (context, snapshot) {
+  if (!snapshot.hasData) {
+    return Text("bottomLeft = ...");
+  }
+  else if (snapshot.data != null) {
+    return Text("bottomLeft = ${snapshot.data!.display.cornerRadii.bottomLeft}");
+  } else {
+    return Text("bottomLeft = <unknown>");
+  }
+});
+```
+
 ### Provider
 
 ```dart

@@ -1,6 +1,9 @@
 ## 0.0.2
 
-* Add DeviceGeometryProvider provider
+* fix: Make DeviceGeometry.get static
+* feat: Memoize calls to DeviceGeometry.get
+* feat: Add DeviceGeometryProvider provider
+* feat: Add DeviceGeometryBuilder provider
 
 ## 0.0.1
 
