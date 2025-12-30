@@ -1,3 +1,7 @@
+## 0.0.4
+
+* docs: Fix usage screenshot on pub.dev
+
 ## 0.0.3
 
 * docs: Document limitations
