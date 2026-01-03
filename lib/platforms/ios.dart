@@ -157,8 +157,8 @@ extension IosDeviceGeometry on IosDeviceInfo {
         ),
       ),
     ),
-    // iPad Air 11-inch 7th Gen, Air 13-inch 7th Gen
-    "iPad15,3" || "iPad15,4" || "iPad15,5" || "iPad15,6" => DeviceGeometry(
+    // iPad Pro (12.9-inch), iPad Air 11-inch 7th Gen, Air 13-inch 7th Gen
+    "iPad14,5" || "iPad15,3" || "iPad15,4" || "iPad15,5" || "iPad15,6" => DeviceGeometry(
       display: DisplayGeometry(
         cornerRadii: DisplayCornerRadii(
           topLeft: 18.0,
