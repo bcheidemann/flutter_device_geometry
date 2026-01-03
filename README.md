@@ -137,6 +137,7 @@ is considered in scope for this package but has not been implemented yet.
 - iPad Pro 13-inch (M5)
 - iPad mini 7th Gen
 - iPad 11th Gen
+- iPad Pro (12.9-inch)
 - iPad Air 11-inch 7th Gen
 - iPad Air 13-inch 7th Gen
 
